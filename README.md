@@ -23,12 +23,12 @@ Top to bottom:
 3. **Video band** — full-width autoplaying muted loop. Native controls are off; a
    single custom play/pause button (and clicking the video) toggles playback.
 4. **About us** (`#about`) — short intro plus a `.facts` list (sports, surface, lighting).
-5. **Facilities** (`#facilities`) — each group is a bordered `.facility-box` holding
-   its `<h3 class="facility-group">` and a grid of cards: Coaching & classes and
-   Amenities are `.facility-box-full` (full width), while Practice and Events share a
-   row in the two-column `.facility-boxes` grid (one column under 40rem). Cards use
-   `auto-fill` columns so they keep the same width, and each is an icon + name, a
-   one-line note, and a call or booking link.
+5. **Facilities** (`#facilities`) — groups laid out in the two-column
+   `.facility-layout` grid (one column under 40rem), each holding an
+   `<h3 class="facility-group">` and a grid of cards. Coaching & classes and Amenities
+   are `.facility-wide` (full width); the two `.facility-col` groups, Practice and
+   Events, share a row. Cards use `auto-fill` columns so they keep the same width, and
+   each is an icon + name, a one-line note, and a call or booking link.
 6. **Opening hours** (`#hours`) — day/time rows.
 7. **Location** (`#location`) — address, Google Maps directions link and an embedded map.
 8. **Gallery** (`#gallery`) — mosaic of tiles; `tile-wide`, `tile-tall` and `tile-xwide`
