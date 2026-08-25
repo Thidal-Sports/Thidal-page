@@ -1,4 +1,4 @@
-# Thidal Sports
+# Thidal Sport
 
 Static one-page site for the Thidal Sports ground in Palavedu, Avadi. Plain HTML,
 CSS and JavaScript — no framework, no build step.
