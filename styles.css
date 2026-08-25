@@ -244,8 +244,26 @@ h2 {
   color: var(--muted);
 }
 
+.facility-boxes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.25rem;
+}
+
+.facility-box {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.facility-box-full {
+  grid-column: 1 / -1;
+}
+
 .facility-group {
-  margin: 1.5rem 0 0;
+  margin: 0;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -258,7 +276,7 @@ h2 {
   margin: 0.75rem 0 0;
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
 }
 
 .facilities li {
@@ -305,6 +323,12 @@ h2 {
 
 .facility-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 40rem) {
+  .facility-boxes {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hours {
