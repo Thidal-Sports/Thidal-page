@@ -244,21 +244,15 @@ h2 {
   color: var(--muted);
 }
 
-.facility-boxes {
+.facility-layout {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem 1rem;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 1.25rem;
+  align-items: start;
 }
 
-.facility-box {
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.facility-box-full {
+.facility-wide {
   grid-column: 1 / -1;
 }
 
@@ -326,7 +320,7 @@ h2 {
 }
 
 @media (max-width: 40rem) {
-  .facility-boxes {
+  .facility-layout {
     grid-template-columns: 1fr;
   }
 }
